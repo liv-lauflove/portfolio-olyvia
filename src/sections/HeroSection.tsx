@@ -61,7 +61,7 @@ export function HeroSection() {
           className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center justify-center opacity-70 hover:opacity-100 transition-opacity z-30 cursor-pointer pointer-events-auto"
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-          onClick={(e: any) => handleScrollTo(e, "#about")}
+          onClick={(e: any) => handleScrollTo(e, "#intro")}
         >
           <span className="text-sm font-medium mb-2 text-foreground">Scroll to Explore</span>
           <ArrowDown className="w-6 h-6 text-primary" />

@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import Lenis from 'lenis'
 import { Navbar } from './components/Navbar'
 import { HeroSection } from './sections/HeroSection'
+import { HeroIntroSection } from './sections/HeroIntroSection'
 import { AboutSection } from './sections/AboutSection'
 import './App.css'
 
@@ -37,7 +38,10 @@ function App() {
         {/* Phase 2: Hero Quote & Intro */}
         <HeroSection />
 
-        {/* Phase 3 & 4: About Me & Intro */}
+        {/* Phase 3: Hero Introduction */}
+        <HeroIntroSection />
+
+        {/* Phase 4: About Me */}
         <AboutSection />
 
         {/* Phase 5: Tech Stack */}
