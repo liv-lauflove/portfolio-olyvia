@@ -1,6 +1,8 @@
 import { useEffect } from 'react'
 import Lenis from 'lenis'
 import { Navbar } from './components/Navbar'
+import { HeroSection } from './sections/HeroSection'
+import { AboutSection } from './sections/AboutSection'
 import './App.css'
 
 function App() {
@@ -33,14 +35,10 @@ function App() {
       
       <main>
         {/* Phase 2: Hero Quote & Intro */}
-        <section id="home" className="min-h-screen flex items-center justify-center pt-20 border-b border-border/10">
-          <h1 className="text-4xl font-bold opacity-50">Hero Section Placeholder</h1>
-        </section>
+        <HeroSection />
 
-        {/* Phase 4: About Me */}
-        <section id="about" className="min-h-screen flex items-center justify-center border-b border-border/10 bg-muted/20">
-          <h2 className="text-3xl font-bold opacity-50">About Section Placeholder</h2>
-        </section>
+        {/* Phase 3 & 4: About Me & Intro */}
+        <AboutSection />
 
         {/* Phase 5: Tech Stack */}
         <section id="skills" className="min-h-[50vh] flex items-center justify-center border-b border-border/10">
