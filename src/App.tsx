@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar'
 import { HeroSection } from './sections/HeroSection'
 import { HeroIntroSection } from './sections/HeroIntroSection'
 import { AboutSection } from './sections/AboutSection'
+import { TechStackSection } from './sections/TechStackSection'
 import './App.css'
 
 function App() {
@@ -45,9 +46,7 @@ function App() {
         <AboutSection />
 
         {/* Phase 5: Tech Stack */}
-        <section id="skills" className="min-h-[50vh] flex items-center justify-center border-b border-border/10">
-          <h2 className="text-3xl font-bold opacity-50">Skills Section Placeholder</h2>
-        </section>
+        <TechStackSection />
 
         {/* Phase 6: Featured Projects */}
         <section id="projects" className="min-h-screen flex items-center justify-center border-b border-border/10 bg-muted/20">
