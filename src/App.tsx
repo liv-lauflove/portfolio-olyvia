@@ -6,6 +6,8 @@ import { HeroIntroSection } from './sections/HeroIntroSection'
 import { AboutSection } from './sections/AboutSection'
 import { TechStackSection } from './sections/TechStackSection'
 import { ProjectsSection } from './sections/ProjectsSection'
+import { ContactSection } from './sections/ContactSection'
+import { Footer } from './components/Footer'
 import './App.css'
 
 function App() {
@@ -53,15 +55,11 @@ function App() {
         <ProjectsSection />
 
         {/* Phase 7: Contact */}
-        <section id="contact" className="min-h-[80vh] flex items-center justify-center">
-          <h2 className="text-3xl font-bold opacity-50">Contact Section Placeholder</h2>
-        </section>
+        <ContactSection />
       </main>
 
-      {/* Footer will go here */}
-      <footer className="py-6 text-center text-sm text-muted-foreground border-t border-border">
-        Designed & Developed by Olyvia Audy Djohari © 2026
-      </footer>
+      {/* Phase 8: Footer */}
+      <Footer />
     </div>
   )
 }

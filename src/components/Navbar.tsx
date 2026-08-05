@@ -77,11 +77,13 @@ export function Navbar() {
           
           <div className="flex items-center gap-4 border-l border-border pl-4">
             <ThemeToggle />
-            {/* Optional Download CV Button in Navbar */}
+            {/* Download CV Button in Navbar */}
             <a 
               href="/cv.pdf" 
               target="_blank" 
-              className="px-4 py-2 text-sm font-medium rounded-md bg-primary text-primary-foreground hover:opacity-90 transition-opacity"
+              rel="noopener noreferrer"
+              download="CV_Olyvia_Audy_Djohari.pdf"
+              className="px-4 py-2 text-sm font-medium rounded-md bg-primary text-primary-foreground hover:opacity-90 transition-opacity flex items-center gap-2 cursor-pointer"
             >
               Resume
             </a>
@@ -127,6 +129,8 @@ export function Navbar() {
             <a 
               href="/cv.pdf" 
               target="_blank" 
+              rel="noopener noreferrer"
+              download="CV_Olyvia_Audy_Djohari.pdf"
               className="w-full text-center py-3 mt-4 text-sm font-medium rounded-md bg-primary text-primary-foreground"
             >
               Download Resume

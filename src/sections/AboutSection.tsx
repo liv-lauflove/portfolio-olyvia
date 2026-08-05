@@ -79,6 +79,25 @@ export function AboutSection() {
             </motion.div>
           ))}
         </div>
+
+        {/* Download Resume CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.4 }}
+          className="mt-16 text-center"
+        >
+          <a
+            href="/cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download="CV_Olyvia_Audy_Djohari.pdf"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-primary text-primary-foreground font-semibold text-sm md:text-base hover:opacity-90 transition-all hover:scale-105 shadow-xl hover:shadow-[0_10px_25px_-5px_rgba(28,78,167,0.4)] cursor-pointer"
+          >
+            <span>Download Full Resume (PDF)</span>
+          </a>
+        </motion.div>
       </div>
     </section>
   )
